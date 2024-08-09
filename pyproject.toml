@@ -10,7 +10,7 @@ python = ">=3.10,<3.13"
 aijson-core = "*"
 aijson-ml = {version = "*", extras = ["api"]}
 aijson-pdf = {version = "*", extras = ["all"]}
-aijson-db = {version = "*", extras = ["all"]}
+aijson-db = {version = "*"}
 aijson-utils = {version = "*"}
 
 
