@@ -9,7 +9,7 @@ readme = "README.md"
 python = ">=3.10,<3.13"
 aijson-core = "*"
 aijson-ml = {version = "*", extras = ["api"]}
-aijson-pdf = {version = "*", extras = ["all"]}
+aijson-pdf = {version = "*"}
 aijson-db = {version = "*"}
 aijson-utils = {version = "*"}
 
