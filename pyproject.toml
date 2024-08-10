@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-aijson-core = "*"
+aijson-core = ">=0.1.11"
 aijson-ml = {version = "*", extras = ["api"]}
 aijson-pdf = {version = "*"}
 aijson-db = {version = "*"}
