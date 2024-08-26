@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aijson-core"
-version = "0.1.11"
+version = "0.1.21"
 description = "Low-code config language for AI pipelines"
 optional = false
 python-versions = "<3.13,>=3.10"
 files = [
-    {file = "aijson_core-0.1.11-py3-none-any.whl", hash = "sha256:95a1d18734ede970059531d6fa65b46085729e7f8fa192479dd2e822baba725d"},
-    {file = "aijson_core-0.1.11.tar.gz", hash = "sha256:2ecdead9cd44dda481c7a022149446e7b75103a112801e41889f7ab1a9cb9b44"},
+    {file = "aijson_core-0.1.21-py3-none-any.whl", hash = "sha256:39d8487d8a21178545180ff5cfa09be37ec6b04090a9f7a7bfbebf65795b47a4"},
+    {file = "aijson_core-0.1.21.tar.gz", hash = "sha256:84896978708f3d499181056bf664462d16d91c50c6e29f241db59aeac3a514fd"},
 ]
 
 [package.dependencies]
@@ -64,13 +64,13 @@ sqlite = ["aiosqlite (>=0.20.0,<0.21.0)"]
 
 [[package]]
 name = "aijson-ml"
-version = "0.1.4"
+version = "0.1.8"
 description = "AI JSON Machine Learning Actions | LLMs, transformers"
 optional = false
 python-versions = "<3.13,>=3.10"
 files = [
-    {file = "aijson_ml-0.1.4-py3-none-any.whl", hash = "sha256:191c4b2ffb82fc9d0bc2fac053ca78868cb2d84620dd37650ca48014fc5c3424"},
-    {file = "aijson_ml-0.1.4.tar.gz", hash = "sha256:cddc3494fd5980ba9edc0400fd50de54e517ca271bbde116496c16fa4378b0e4"},
+    {file = "aijson_ml-0.1.8-py3-none-any.whl", hash = "sha256:6314499ccf61fca1553286f4200b17e5d30e4b2a65f85736ee89cd6d260dfa70"},
+    {file = "aijson_ml-0.1.8.tar.gz", hash = "sha256:1aedb6729ec1fc88eb3c32878312f8722b12c9ff0694ec791a1eda5ba98d34e3"},
 ]
 
 [package.dependencies]
@@ -78,7 +78,7 @@ aijson-core = "*"
 anthropic = {version = ">=0.21.3,<0.22.0", optional = true, markers = "extra == \"anthropic\" or extra == \"api\" or extra == \"all\""}
 boto3 = {version = ">=1.28.57", optional = true, markers = "extra == \"api\" or extra == \"all\""}
 google-cloud-aiplatform = {version = ">=1.43.0,<2.0.0", optional = true, markers = "extra == \"gcloud\" or extra == \"api\" or extra == \"all\""}
-litellm = ">=1.30.3,<1.42.11"
+litellm = ">=1.43.6"
 openai = {version = ">=1,<2", optional = true, markers = "extra == \"openai\" or extra == \"api\" or extra == \"all\""}
 types-aioboto3 = {version = ">=12.2.0,<13.0.0", extras = ["s3"]}
 
@@ -876,9 +876,9 @@ isort = ">=4.3.21,<6.0"
 jinja2 = ">=2.10.1,<4.0"
 packaging = "*"
 pydantic = [
-    {version = ">=1.9.0,<2.4.0 || >2.4.0,<3.0", extras = ["email"], markers = "python_version >= \"3.10\" and python_version < \"3.11\""},
-    {version = ">=1.10.0,<2.4.0 || >2.4.0,<3.0", extras = ["email"], markers = "python_version >= \"3.11\" and python_version < \"3.12\""},
     {version = ">=1.10.0,<2.0.0 || >2.0.0,<2.0.1 || >2.0.1,<2.4.0 || >2.4.0,<3.0", extras = ["email"], markers = "python_version >= \"3.12\" and python_version < \"4.0\""},
+    {version = ">=1.10.0,<2.4.0 || >2.4.0,<3.0", extras = ["email"], markers = "python_version >= \"3.11\" and python_version < \"3.12\""},
+    {version = ">=1.9.0,<2.4.0 || >2.4.0,<3.0", extras = ["email"], markers = "python_version >= \"3.10\" and python_version < \"3.11\""},
 ]
 pyyaml = ">=6.0.1"
 toml = {version = ">=0.10.0,<1.0.0", markers = "python_version < \"3.11\""}
@@ -1223,12 +1223,12 @@ files = [
 google-auth = ">=2.14.1,<3.0.dev0"
 googleapis-common-protos = ">=1.56.2,<2.0.dev0"
 grpcio = [
-    {version = ">=1.33.2,<2.0dev", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
     {version = ">=1.49.1,<2.0dev", optional = true, markers = "python_version >= \"3.11\" and extra == \"grpc\""},
+    {version = ">=1.33.2,<2.0dev", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
 ]
 grpcio-status = [
-    {version = ">=1.33.2,<2.0.dev0", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
     {version = ">=1.49.1,<2.0.dev0", optional = true, markers = "python_version >= \"3.11\" and extra == \"grpc\""},
+    {version = ">=1.33.2,<2.0.dev0", optional = true, markers = "python_version < \"3.11\" and extra == \"grpc\""},
 ]
 proto-plus = ">=1.22.3,<2.0.0dev"
 protobuf = ">=3.19.5,<3.20.0 || >3.20.0,<3.20.1 || >3.20.1,<4.21.0 || >4.21.0,<4.21.1 || >4.21.1,<4.21.2 || >4.21.2,<4.21.3 || >4.21.3,<4.21.4 || >4.21.4,<4.21.5 || >4.21.5,<6.0.0.dev0"
@@ -2162,13 +2162,13 @@ files = [
 
 [[package]]
 name = "litellm"
-version = "1.42.10"
+version = "1.44.6"
 description = "Library to easily interface with LLM API providers"
 optional = false
 python-versions = "!=2.7.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,!=3.7.*,>=3.8"
 files = [
-    {file = "litellm-1.42.10-py3-none-any.whl", hash = "sha256:f318e7d1b6eb9134397edfb7ad070c744fbcdcdfd165d0282ae7acf8bb740db2"},
-    {file = "litellm-1.42.10.tar.gz", hash = "sha256:eda013f10d5d843e78fcaf9ef6e3cc2f3a3e2572c72a9ceb3b7c97f7e35d3b4e"},
+    {file = "litellm-1.44.6-py3-none-any.whl", hash = "sha256:7c16bbc9cd657302b75aeb29c9fde976f98db487b4d5b390e0a84608bbfb1a93"},
+    {file = "litellm-1.44.6.tar.gz", hash = "sha256:53dd722453103c0743f19e87a6c60a65437bebace042a0d4fb43faca4720df02"},
 ]
 
 [package.dependencies]
@@ -2177,7 +2177,7 @@ click = "*"
 importlib-metadata = ">=6.8.0"
 jinja2 = ">=3.1.2,<4.0.0"
 jsonschema = ">=4.22.0,<5.0.0"
-openai = ">=1.27.0"
+openai = ">=1.40.0"
 pydantic = ">=2.0.0,<3.0.0"
 python-dotenv = ">=0.2.0"
 requests = ">=2.31.0,<3.0.0"
@@ -2185,8 +2185,8 @@ tiktoken = ">=0.7.0"
 tokenizers = "*"
 
 [package.extras]
-extra-proxy = ["azure-identity (>=1.15.0,<2.0.0)", "azure-keyvault-secrets (>=4.8.0,<5.0.0)", "google-cloud-kms (>=2.21.3,<3.0.0)", "prisma (==0.11.0)", "pynacl (>=1.5.0,<2.0.0)", "resend (>=0.8.0,<0.9.0)"]
-proxy = ["PyJWT (>=2.8.0,<3.0.0)", "apscheduler (>=3.10.4,<4.0.0)", "backoff", "cryptography (>=42.0.5,<43.0.0)", "fastapi (>=0.111.0,<0.112.0)", "fastapi-sso (>=0.10.0,<0.11.0)", "gunicorn (>=22.0.0,<23.0.0)", "orjson (>=3.9.7,<4.0.0)", "python-multipart (>=0.0.9,<0.0.10)", "pyyaml (>=6.0.1,<7.0.0)", "rq", "uvicorn (>=0.22.0,<0.23.0)"]
+extra-proxy = ["azure-identity (>=1.15.0,<2.0.0)", "azure-keyvault-secrets (>=4.8.0,<5.0.0)", "google-cloud-kms (>=2.21.3,<3.0.0)", "prisma (==0.11.0)", "resend (>=0.8.0,<0.9.0)"]
+proxy = ["PyJWT (>=2.8.0,<3.0.0)", "apscheduler (>=3.10.4,<4.0.0)", "backoff", "cryptography (>=42.0.5,<43.0.0)", "fastapi (>=0.111.0,<0.112.0)", "fastapi-sso (>=0.10.0,<0.11.0)", "gunicorn (>=22.0.0,<23.0.0)", "orjson (>=3.9.7,<4.0.0)", "pynacl (>=1.5.0,<2.0.0)", "python-multipart (>=0.0.9,<0.0.10)", "pyyaml (>=6.0.1,<7.0.0)", "rq", "uvicorn (>=0.22.0,<0.23.0)"]
 
 [[package]]
 name = "markdown-it-py"
@@ -2633,6 +2633,7 @@ optional = false
 python-versions = ">=3.9"
 files = [
     {file = "pandas-2.2.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:90c6fca2acf139569e74e8781709dccb6fe25940488755716d1d354d6bc58bce"},
+    {file = "pandas-2.2.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:c7adfc142dac335d8c1e0dcbd37eb8617eac386596eb9e1a1b77791cf2498238"},
     {file = "pandas-2.2.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4abfe0be0d7221be4f12552995e58723c7422c80a659da13ca382697de830c08"},
     {file = "pandas-2.2.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8635c16bf3d99040fdf3ca3db669a7250ddf49c55dc4aa8fe0ae0fa8d6dcc1f0"},
     {file = "pandas-2.2.2-cp310-cp310-musllinux_1_1_aarch64.whl", hash = "sha256:40ae1dffb3967a52203105a077415a86044a2bea011b5f321c6aa64b379a3f51"},
@@ -2653,6 +2654,7 @@ files = [
     {file = "pandas-2.2.2-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:43498c0bdb43d55cb162cdc8c06fac328ccb5d2eabe3cadeb3529ae6f0517c32"},
     {file = "pandas-2.2.2-cp312-cp312-win_amd64.whl", hash = "sha256:d187d355ecec3629624fccb01d104da7d7f391db0311145817525281e2804d23"},
     {file = "pandas-2.2.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:0ca6377b8fca51815f382bd0b697a0814c8bda55115678cbc94c30aacbb6eff2"},
+    {file = "pandas-2.2.2-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:9057e6aa78a584bc93a13f0a9bf7e753a5e9770a30b4d758b8d5f2a62a9433cd"},
     {file = "pandas-2.2.2-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:001910ad31abc7bf06f49dcc903755d2f7f3a9186c0c040b827e522e9cef0863"},
     {file = "pandas-2.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:66b479b0bd07204e37583c191535505410daa8df638fd8e75ae1b383851fe921"},
     {file = "pandas-2.2.2-cp39-cp39-musllinux_1_1_aarch64.whl", hash = "sha256:a77e9d1c386196879aa5eb712e77461aaee433e54c68cf253053a73b7e49c33a"},
@@ -2663,9 +2665,9 @@ files = [
 
 [package.dependencies]
 numpy = [
-    {version = ">=1.22.4", markers = "python_version < \"3.11\""},
-    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
     {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
+    {version = ">=1.22.4", markers = "python_version < \"3.11\""},
 ]
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
@@ -5253,4 +5255,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "255335dfe781059de7bf49e8c9be186456ef93533e217e786a17669a136956cc"
+content-hash = "885c4bd9957854a0e508ba71b6d97def97d6322f5d52979c13ccf4a45bacb3e0"
