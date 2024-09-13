@@ -9,9 +9,9 @@ readme = "README.md"
 python = ">=3.10,<3.13"
 aijson-core = "^0.1.22"
 aijson-ml = {version = "^0.1.9", extras = ["api"]}
-aijson-pdf = {version = "*"}
-aijson-db = {version = "*"}
-aijson-utils = {version = "*"}
+aijson-pdf = {version = "^0.1.0"}
+aijson-db = {version = "^0.1.0"}
+aijson-utils = {version = "^0.1.0"}
 
 
 [build-system]
