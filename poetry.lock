@@ -2,13 +2,13 @@
 
 [[package]]
 name = "aijson-core"
-version = "0.1.21"
+version = "0.1.22"
 description = "Low-code config language for AI pipelines"
 optional = false
 python-versions = "<3.13,>=3.10"
 files = [
-    {file = "aijson_core-0.1.21-py3-none-any.whl", hash = "sha256:39d8487d8a21178545180ff5cfa09be37ec6b04090a9f7a7bfbebf65795b47a4"},
-    {file = "aijson_core-0.1.21.tar.gz", hash = "sha256:84896978708f3d499181056bf664462d16d91c50c6e29f241db59aeac3a514fd"},
+    {file = "aijson_core-0.1.22-py3-none-any.whl", hash = "sha256:f0e6960c1fd7a57c94dde56f864a0262176fa6b14e71f896580de639e2ec04c7"},
+    {file = "aijson_core-0.1.22.tar.gz", hash = "sha256:efce50462fc0214c4b2dabbbdffbfe7b353e8bd65cea4e84e15c661999a76cd6"},
 ]
 
 [package.dependencies]
@@ -64,13 +64,13 @@ sqlite = ["aiosqlite (>=0.20.0,<0.21.0)"]
 
 [[package]]
 name = "aijson-ml"
-version = "0.1.8"
+version = "0.1.9"
 description = "AI JSON Machine Learning Actions | LLMs, transformers"
 optional = false
 python-versions = "<3.13,>=3.10"
 files = [
-    {file = "aijson_ml-0.1.8-py3-none-any.whl", hash = "sha256:6314499ccf61fca1553286f4200b17e5d30e4b2a65f85736ee89cd6d260dfa70"},
-    {file = "aijson_ml-0.1.8.tar.gz", hash = "sha256:1aedb6729ec1fc88eb3c32878312f8722b12c9ff0694ec791a1eda5ba98d34e3"},
+    {file = "aijson_ml-0.1.9-py3-none-any.whl", hash = "sha256:2ac91a16ef175db5a8ad405d56200d5d9dc46c32f37ddae76af4b9874a0e35d6"},
+    {file = "aijson_ml-0.1.9.tar.gz", hash = "sha256:3702a38ab199632cf8015591dbab93e426a3cf03af055bed8bbc6b7578693b54"},
 ]
 
 [package.dependencies]
@@ -5255,4 +5255,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "885c4bd9957854a0e508ba71b6d97def97d6322f5d52979c13ccf4a45bacb3e0"
+content-hash = "7b523ce7dde33fee97f6dc89a24feb7a0a2eeac286937df2157eb255c5ea0ff8"
